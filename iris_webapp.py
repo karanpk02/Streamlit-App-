@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
-log_model = pickle.load(open('https://github.com/karanpk02/Streamlit-App-/blob/main/log_model.pkl','rb'))
-rf_model = pickle.load(open('https://github.com/karanpk02/Streamlit-App-/blob/main/rf_model.pkl','rb'))
+log_model = pickle.load(open('log_model.pkl','rb'))
+rf_model = pickle.load(open('rf_model.pkl','rb'))
 def classify(num):
     if num<0.5:
         return "setosa"
